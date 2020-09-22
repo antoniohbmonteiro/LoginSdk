@@ -1,5 +1,6 @@
 package com.antoniomonteiro.loginsdk
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,6 +24,10 @@ class LoginFragment : Fragment() {
 
         signupBtn.setOnClickListener {
             it.findNavController().navigate(R.id.action_loginFragment_to_signupFragment)
+        }
+
+        loginBtn.setOnClickListener {
+            activity?.setResult(Activity.RESULT_OK)
         }
     }
 
