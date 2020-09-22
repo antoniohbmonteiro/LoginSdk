@@ -1,6 +1,7 @@
 package com.antoniomonteiro.loginsdk
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -29,7 +30,7 @@ class LoginFragment : Fragment() {
 
         loginBtn.setOnClickListener {
             Log.i("AntonioTesteTag", "funfou")
-            activity?.setResult(Activity.RESULT_OK)
+            activity?.setResult(Activity.RESULT_OK, Intent())
             activity?.finish()
         }
     }
