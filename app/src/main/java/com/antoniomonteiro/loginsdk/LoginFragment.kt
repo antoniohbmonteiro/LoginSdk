@@ -2,6 +2,7 @@ package com.antoniomonteiro.loginsdk
 
 import android.app.Activity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -27,7 +28,9 @@ class LoginFragment : Fragment() {
         }
 
         loginBtn.setOnClickListener {
+            Log.i("AntonioTesteTag", "funfou")
             activity?.setResult(Activity.RESULT_OK)
+            activity?.finish()
         }
     }
 
